@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+	<title>Aide aux maths</title>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS only -->
+
+<link rel="stylesheet" type="text/css" href="projetnsi.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<head>
+	<script type="text/javascript">
+	function choixFormule() {
+    	var selectBox = document.getElementById("formules");
+    	var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    	document.getElementById("iframe").src = selectedValue;
+	}
+
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    	<div class="navbar-header">
+      		<a class="navbar-brand" href="#">Aide aux calculs</a>
+    	</div>
+    	<ul class="nav navbar-nav">
+      		<li class="active"><a href="projetnsi.html">Page d'accueil</a></li>
+      		<li class="active"><a>Choisir la formule :</a></li>
+      		<li>
+      			<a href="#".html">
+      				<form class="choix" >
+      					<select name="formules" id="formules" onchange="choixFormule();">
+      						<option value="choix/choix.html">Choix :</option>
+      						<option value="theoreme/Pythagore/pythagore.html">Théorème de Pythagore</option>
+    						<option value="theoreme/thales/thales.html">Théorème de Thalès</option>
+    						<option value="v/vcyl/volcylindre.html">Volume d'un cylindre</option>
+          					<option value="v/vsph/volsphere.html">Volume d'une sphère</option>
+          					<option value="v/vpyr/volpyramide.html">Volume d'une pyramide</option>
+          					<option value="v/vcon/volcone.html">Volume d'un cône</option>
+
+
+						</select>
+		      		</form>
+      			</a>
+	      	</li>
+    	</ul>
+	  	<p class="navbar-brand">Corentin ALBERT & Fabien MONTET</p>
+  	</div>
+</nav>
+
+<iframe class="iframe" src="choix/choix.html" id="iframe"></iframe>
+</body>

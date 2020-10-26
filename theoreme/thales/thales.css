@@ -1,0 +1,36 @@
+body{
+background-color:#c4fbff;
+}
+h1
+{
+font-family : arial;
+}
+h2
+{
+font-family : arial;
+}
+span
+{
+font-family : arial;
+}
+button
+{
+font-family : arial;
+}
+img
+{
+display : block;
+max-height : 100%;
+max-width : 100%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 100px;
+}
+#accueil
+{
+font-family : arial;
+display : block;
+left: auto;
+right: auto;
+text-align: center;
+}
